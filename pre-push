@@ -1,1 +1,9 @@
 #!/bin/bash
+
+while read local_ref local_sha remote_ref remote_sha
+do
+    echo "local_ref  = ${local_ref}"    1>&2
+    echo "local_sha  = ${local_sha}"    1>&2
+    echo "remote_ref = ${remote_ref}"   1>&2
+    echo "remote_sha = ${remote_sha}"   1>&2
+done
