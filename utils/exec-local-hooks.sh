@@ -1,8 +1,10 @@
 #!/bin/bash
 
 script_dir=$(dirname "$0")
+hooks_root_dir="${script_dir}/.."
 
-source  "${script_dir}/git-info.rc"
+echo  "$0"
+source  "${hooks_root_dir}/utils/git-info.rc"
 
 git_root=$(get-git-root)
 hook_name=$(basename "$0")
