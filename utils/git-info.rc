@@ -1,0 +1,4 @@
+
+function get-git-root {
+    git rev-parse --show-superproject-working-tree --show-toplevel | head -n 1
+}
