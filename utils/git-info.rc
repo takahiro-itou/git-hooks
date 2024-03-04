@@ -5,5 +5,5 @@ function get-git-root {
 
 function get-current-branch {
     git branch --no-color 2>/dev/null \
-    | sed -e '/^[^*]/d'
+    | sed -e '/^[^*]/d' -e 's/\* \(.*\)/\1/'
 }
